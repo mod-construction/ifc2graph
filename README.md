@@ -1,10 +1,35 @@
-# MOD Project Template
+# ifc2graph
 
-Welcome to the MOD project template repository! This repository is designed to serve as a starting point for any open-source project under the MOD ecosystem, ensuring consistency, clarity, and collaboration.
+A Python tool for converting Industry Foundation Classes (IFC) files into knowledge graphs, enabling semantic analysis and querying of building information models.
 
 ## Overview
 
-MOD is an open-source platform for the modular construction industry. Our mission is to enhance efficiency, cost-effectiveness, and sustainability in construction through digital innovation. This repository is a template for projects adhering to our principles and standards, licensed under the **MIT License**.
+`ifc2graph` transforms IFC-based Building Information Models (BIM) into graph-based representations, making it easier to:
+
+- Query complex relationships between building elements
+- Perform semantic analysis of building data
+- Enable knowledge discovery in construction datasets
+- Integrate BIM data with other graph-based systems
+
+## Features
+
+- Convert IFC files to property graphs
+- Support for common IFC schemas (IFC2X3, IFC4)
+- Export to various graph formats (Neo4j, RDF, GraphML)
+- Preserve IFC relationships and properties
+- Configurable mapping rules
+- Batch processing capabilities
+
+## Installation
+```bash
+pip install ifc2graph
+```
+
+## Usage
+```bash
+ifc2graph -i input.ifc -o output.graphml
+```
+
 
 ---
 
